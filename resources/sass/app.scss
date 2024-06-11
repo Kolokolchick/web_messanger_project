@@ -1,0 +1,19 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; /* чтобы навигация была над всеми другими элементами */
+}
+  
+main {
+  padding-top: 60px; /* или любое другое значение, равное высоте навигации */
+}

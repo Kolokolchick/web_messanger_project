@@ -1,0 +1,57 @@
+# Laravel 10
+
+/vendor
+/node_modules
+
+# Laravel specific
+/public/storage
+/public/hot
+/public/uploads
+/storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+.vagrant
+.phpunit.result.cache
+
+# IDEs and editors
+.idea/
+.vscode/
+/*.sublime-project
+/*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Composer & NPM dependencies
+composer.phar
+npm-debug.log
+yarn-error.log
+
+# Laravel Mix specific
+/public/mix-manifest.json
+/public/hot
+/public/css
+/public/js
+/public/images
+/public/fonts
+
+# PHPUnit
+.phpunit.result.cache
+.phpunit.result.cache/*
+
+# Laravel Sail
+sail
+
+# Mac files
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+Desktop.ini
