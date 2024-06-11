@@ -28,7 +28,6 @@ Thumbs.db
 *.log
 
 # Composer & NPM dependencies
-composer.phar
 npm-debug.log
 yarn-error.log
 
