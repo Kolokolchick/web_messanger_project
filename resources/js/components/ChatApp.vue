@@ -345,7 +345,7 @@
             border: 1px solid #bebdbd;
 
             &:hover {
-                background-color: #333;
+                background-color: #fff;
             }
 
             &:active {

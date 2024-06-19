@@ -278,9 +278,10 @@ export default {
 // added media queries for responsiveness
 @media (max-width: 768px) {
     .feed {
-        height: 80vh;
-        max-height: 80vh;
-        padding: 5px;
+        height: 100%;
+        max-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .message-actions {
