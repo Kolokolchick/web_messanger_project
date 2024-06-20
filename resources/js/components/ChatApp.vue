@@ -5,6 +5,7 @@
             <button @click="showSidebar =!showSidebar; showContacts = false; showGroups = false" class="sidebar-button">Закрыть меню</button>
             <button @click="showContacts =!showContacts; showGroups = false; showCreateGroupModal = false" class="sidebar-button">Контакты</button>
             <button @click="showGroups =!showGroups; showContacts = false; showCreateGroupModal = false; showGroupList = true" class="sidebar-button">Группы</button>
+            <button @click="showPrivacyPolicy" class="sidebar-button">Поилитика конфеденциальности</button>
             <hr>
             <div v-if="showContacts">
                 <ContactsList 
@@ -154,6 +155,9 @@
         },
 
         methods: {
+            showPrivacyPolicy() {
+                window.open('/privacy-policy', '_blank');
+            },
             updateContacts() {
                 axios.get('/contacts')
                     .then((response) => {

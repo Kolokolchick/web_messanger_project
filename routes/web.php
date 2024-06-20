@@ -34,6 +34,11 @@ Route::get('/', function () {
     }
 });
 
+Route::get('/privacy-policy', function () {
+    return view('privacyPolicy');
+})->name('privacy.policy');
+
+
 Auth::routes();
 
 //Главная страница
