@@ -32,7 +32,6 @@ class NewMessageGroup implements ShouldBroadcast
 
     public function broadcastWith()
     {
-        // Расшифровываем текст перед отправкой улиенту
         $this->message->text = Crypt::decryptString($this->message->text);
 
         return ["message" => $this->message];

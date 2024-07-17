@@ -27,7 +27,7 @@ export default {
         }
 
         function onClose() {
-            emit('close'); // Emit the close even
+            emit('close');
         }
 
         return {
@@ -58,15 +58,15 @@ export default {
 
   .close-button {
         position: absolute;
-        top: -50px; /* Move the button above the container */
-        right: 20px; /* Move the button to the right of the container */
+        top: -50px; 
+        right: 20px; 
         font-size: 18px;
         cursor: pointer;
         color: #f7f7f7;
         background-color: #333;
         border: none;
-        padding: 10px; /* Make the button square */
-        transition: background-color 0.2s; /* Add animation */
+        padding: 10px; 
+        transition: background-color 0.2s; 
         transform: rotate(90deg);
     }
 
@@ -76,7 +76,7 @@ export default {
     }
 
   .close-button::before {
-        color: #333; /* Black text */
+        color: #333; 
         font-size: 18px;
     }
 

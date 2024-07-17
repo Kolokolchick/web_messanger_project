@@ -148,7 +148,6 @@ export default {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     @media (max-width: 768px) {
-        // Убедитесь, что все свойства для адаптивного дизайна применены
         top: 50%; 
         left: 50%;
         transform: translate(-50%, -50%);

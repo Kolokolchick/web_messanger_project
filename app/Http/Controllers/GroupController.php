@@ -61,8 +61,6 @@ class GroupController extends Controller
 
         broadcast(new AddUserInGroup($user->id, $group->name))->toOthers();
 
-        //$this->groupNotice($groupId, $user->name ,$isAdded = true, $isRemoved = false);
-
         return response()->json(['message' => 'Пользователь добавлен в группу']);
     }
 
@@ -112,8 +110,6 @@ class GroupController extends Controller
 
         broadcast(new RemoveUserInGroup($user->id, $groupId, $group->name))->toOthers();
 
-        //$this->groupNotice($groupId, $user->name, $isAdded = false, $isRemoved = true);
-
         return response()->json(['message' => 'Пользователь был удалён из группы']);
     }
 
@@ -156,6 +152,7 @@ class GroupController extends Controller
         return response()->json(['message' => 'Группа удалена']);
     }
 
+    // Уведомление о выходе/исключении из группы
     /*public function groupNotice ($groupId, $userName ,$isAdded, $isRemoved)
     {
         if ($isAdded == true) {

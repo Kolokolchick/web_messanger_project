@@ -71,7 +71,7 @@ export default {
                 text: text
             }).then((response) => {
                 this.addMessage(response.data);
-                this.$emit('new-contact'); // Событие для обновления списка контакто
+                this.$emit('new-contact'); // Событие для обновления списка контактов
             }).catch(error => {
                 console.error('Error sending message:', error);
                 alert('Error: ' + error.response.data.error);
@@ -99,21 +99,18 @@ export default {
         },
 
         editMessageHandler(message) {
-            // Здесь вы можете вызвать модальное окно для редактирования или другой интерфейс
-            // Пока что просто вызовем editMessage напрямую для демонстрации
             const newText = message.text;
             if (newText) {
                 this.editMessage(message.id, newText);
             }
         },
 
-        editMessage(messageId, newText) { //редактирование сообщения
+        editMessage(messageId, newText) {
             axios.patch(`/conversation/message/${messageId}/edit`, {
                 text: newText
             }).then((response) => {
                 const index = this.messages.findIndex(m => m.id === messageId);
                 if (index !== -1) {
-                    //this.$set(this.messages, index, response.data);
                     this.messages[index] = response.data;
                 }
             }).catch(error => {
@@ -128,14 +125,13 @@ export default {
             }
         },
 
-        editMessageForGroup(messageId, newText) { //редактирование сообщения
+        editMessageForGroup(messageId, newText) {
             console.log(messageId); 
             axios.patch(`/conversation/group/message/${messageId}/edit`, {
                 text: newText
             }).then((response) => {
                 const index = this.messages.findIndex(m => m.id === messageId);
                 if (index !== -1) {
-                    //this.$set(this.messages, index, response.data);
                     this.messages[index] = response.data;
                 }
             }).catch(error => {
@@ -143,7 +139,7 @@ export default {
             });
         },
 
-        deleteMessage(messageId) { //удаление сообщения 
+        deleteMessage(messageId) {
             axios.delete(`/conversation/message/${messageId}/delete`)
             .then(() => {
                 const index = this.messages.findIndex(m => m.id === messageId);
@@ -155,7 +151,7 @@ export default {
             });
         },
 
-        deleteMessageInGroup(messageId) { //удаление сообщения
+        deleteMessageInGroup(messageId) {
             axios.delete(`/conversation/group/message/${messageId}/delete`)
             .then(() => {
                 const index = this.messages.findIndex(m => m.id === messageId);
@@ -181,7 +177,7 @@ export default {
 <style lang="scss" scoped>
 .conversation {
     flex: 3;
-    background: #f7f7f7; // light gray background
+    background: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -191,14 +187,14 @@ export default {
     width: 100%;
 
     @media (max-width: 768px) {
-        height: 100%; // adjust height for smaller screens
+        height: 100%; 
         width: 100%;
     }
 
     header {
-        background: #fff; // white background for header
+        background: #fff;
         padding: 1rem;
-        border-bottom: 1px solid #ddd; // light gray border
+        border-bottom: 1px solid #ddd; 
 
         @media (max-width: 768px)  {
             position: fixed;
@@ -210,10 +206,10 @@ export default {
     }
 
     h1 {
-        font-size: 1.75rem; // use relative font size
-        margin: 0; // remove margin
-        color: #333; // darker text color
-        font-weight: bold; // bold font weight
+        font-size: 1.75rem; 
+        margin: 0; 
+        color: #333; 
+        font-weight: bold; 
     }
 
    .messages-feed {

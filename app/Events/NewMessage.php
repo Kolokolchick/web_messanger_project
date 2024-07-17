@@ -33,7 +33,6 @@ class NewMessage implements ShouldBroadcast
     {
         $this->message->load('fromContact');
 
-        // Расшифровываем текст перед отправкой улиенту
         $this->message->text = Crypt::decryptString($this->message->text);
 
         return ["message" => $this->message];

@@ -139,7 +139,6 @@ export default {
 </script>
 
 <style scoped>
-/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -152,7 +151,6 @@ body {
   background-color: #f5f5f5;
 }
 
-/* Contacts list */
 .contacts-list {
   font-family: Arial, sans-serif;
   max-width: 400px;
@@ -164,7 +162,6 @@ body {
   overflow-y: auto;
 }
 
-/* Search */
 .search {
   margin-bottom: 1rem;
 }
@@ -179,7 +176,6 @@ body {
   color: #333;
 }
 
-/* Contact item */
 .contact-item {
   display: flex;
   align-items: center;
@@ -203,7 +199,6 @@ body {
   color: #fff;
 }
 
-/* Contact info */
 .contact-info {
   display: flex;
   align-items: center;
@@ -236,7 +231,6 @@ body {
   margin-left: 1rem;
 }
 
-/* Contact actions */
 .contact-actions {
   display: flex;
   align-items: center;
@@ -262,7 +256,6 @@ body {
   background-color: #fc1717;
 }
 
-/* Media queries */
 @media (max-width: 768px) {
  .contacts-list {
     max-width: 300px;

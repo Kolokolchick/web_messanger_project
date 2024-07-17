@@ -45,7 +45,6 @@ class ContactsController extends Controller
     //поиск контакта
     public function search(Request $request)
     {
-        // Это предполагает использование локального скоупа в модели User
         $query = $request->input('query');
 
         $contacts = User::query()->search($query)->get();
@@ -56,7 +55,6 @@ class ContactsController extends Controller
     // Удаление контакта из списка "добавленных контактов"
     public function removeContact($contactId)
     {
-        Log::notice('removeContact',['$contactId'=>$contactId]);
         $user = Auth::user();
 
         // Удаляем контакт из списка

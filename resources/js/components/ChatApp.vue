@@ -175,8 +175,6 @@
                         this.selectedGroup = null;
                         this.updateUnreadCount(contact.id, true);
                         this.showSidebar = false;
-                        //this.showContacts = false;
-                        //this.showGroups = false;
                     });
             },
             startConversationWithGroup(group) {
@@ -309,7 +307,6 @@
    .sidebar button {
         display: block;
         width: 100%;
-        //margin-bottom: 10px;
     }
 
    .sidebar div {

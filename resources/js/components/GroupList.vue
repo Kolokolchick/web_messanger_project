@@ -143,12 +143,10 @@
 
             onUserRemoved() {
                 this.showRemoveUserModal = false; // Закрыть модальное окно после удаления пользователя
-                // Обновить список пользователей в группе или другие данные
             },
             
             onUserAdded() {
                 this.showAddUserModal = false; // Закрыть модальное окно после добавления пользователя
-                // Обновить список пользователей в группе или другие данные
             },
 
             clearGroupList (groupId) {
@@ -260,7 +258,6 @@
    color: #333;
  }
 
- /* Add some responsive design tweaks */
  @media (max-width: 768px) {
   .groups-list-container {
      flex-direction: column;

@@ -44,13 +44,13 @@ class GroupMessageController extends Controller
     {
         $user = Auth::user();
     
-        // Определите ключ для счетчика сообщений пользователя
+        // Ключ для счетчика сообщений пользователя
         $cacheKey = 'group_message_count_' . $user->id;
     
-        // Проверьте, не превысил ли пользователь лимит отправки сообщений
+        // Проверка, не превысил ли пользователь лимит отправки сообщений
         if (Cache::has($cacheKey)) {
             $messageCount = Cache::get($cacheKey);
-            $messageLimit = 10; // Установите лимит на количество сообщений
+            $messageLimit = 10; // Лимит на количество сообщений
             if ($messageCount >= $messageLimit) {
                 return response()->json(['error' => 'вы превысили лимит отправки сообщений. Попробуйте позже.'], 403);
             }
@@ -70,7 +70,7 @@ class GroupMessageController extends Controller
             'from_name' => $user->name,
         ]);
     
-        // Расшифровываем текст перед отправкой на фронтенд
+        // Расшифровываем текст перед отправкой на фронт
         $message->text = Crypt::decryptString($message->text);
     
         // Проверяем, существует ли ключ для счетчика и последнее время сброса

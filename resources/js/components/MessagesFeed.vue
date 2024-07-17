@@ -140,13 +140,13 @@ export default {
     background: #f0f0f0;
     height: 800px;
     max-height: 800px;
-    overflow-y: auto; // changed from scroll to auto
+    overflow-y: auto; 
     font-family: Arial, sans-serif;
     font-size: 16px;
 
     ul {
         list-style-type: none;
-        padding: 10px; // increased padding for better readability
+        padding: 10px; 
         margin-left: 20px;
 
         li {
@@ -157,26 +157,26 @@ export default {
 
                 .name {
                     font-weight: bold;
-                    color: #333; /* or any other color you prefer */
-                    float: left; /* add this to move the name to the left */
-                    margin-right: 10px; /* add some margin to separate the name from the text */
+                    color: #333; 
+                    float: left; 
+                    margin-right: 10px; 
                 }
 
                 .text {
-                    max-width: 600px; // set a fixed max-width
+                    max-width: 600px; 
                     border-radius: 10px;
                     padding: 15px;
                     display: inline-block;
                     white-space: pre-wrap;
-                    word-wrap: break-word; // allow long words to break to next line
-                    overflow-wrap: break-word; // ensures text wraps inside the container
-                    overflow: hidden; // hide overflow text
-                    text-overflow: ellipsis; // add ellipsis for overflow text
-                    margin: 10px; // Add some space between messages
+                    word-wrap: break-word; 
+                    overflow-wrap: break-word; 
+                    overflow: hidden; 
+                    text-overflow: ellipsis; 
+                    margin: 10px; 
                     color: #333;
                     background-color: #f7f7f7;
                     text-align: left;
-                    margin-left: 2px; // добавляем небольшой отступ слева
+                    margin-left: 2px; 
 
                     @media (max-width: 768px) { 
                         max-width: 260px;
@@ -204,7 +204,7 @@ export default {
 .message-actions {
     display: flex;
     justify-content: flex-end;
-    margin-top: 10px; // increased margin for better spacing
+    margin-top: 10px; 
 
     button {
         background: none;
@@ -212,8 +212,8 @@ export default {
         border-radius: 5px;
         padding: 0;
         cursor: pointer;
-        margin-left: 10px; // increased margin for better spacing
-        font-size: 16px; // increased font-size for better readability
+        margin-left: 10px; 
+        font-size: 16px; 
         color: #333;
         transition: color 0.3s;
         transition: background-color 0.3s;
@@ -270,12 +270,12 @@ export default {
 }
 
 .timestamp {
-    font-size: 14px; // задаём размер шрифта для времени
-    color: #666; // цвет текста для времени
+    font-size: 14px; 
+    color: #666; 
     margin: 10px;    
 }
 
-// added media queries for responsiveness
+
 @media (max-width: 768px) {
     .feed {
         height: 100%;
@@ -285,7 +285,7 @@ export default {
     }
 
     .message-actions {
-        margin-top: 5px; // reduced margin for smaller screens
+        margin-top: 5px; 
     }
 }
 </style>

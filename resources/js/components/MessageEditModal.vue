@@ -77,7 +77,6 @@ export default {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* added flex-wrap */
 }
 
 .modal-content {
@@ -89,9 +88,7 @@ export default {
   max-width: 600px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
-  /* added font family */
   font-size: 16px;
-  /* added font size */
 }
 
 .close {
@@ -103,7 +100,6 @@ export default {
   font-weight: bold;
   transition: color 0.3s, transform 0.2s;
   cursor: pointer;
-  /* added cursor pointer */
 }
 
 .close:hover,
@@ -148,7 +144,6 @@ button:active {
   transform: scale(0.95);
 }
 
-/* Media queries */
 @media (max-width: 768px) {
   .modal-content {
     width: 80%;
