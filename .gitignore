@@ -7,12 +7,27 @@
 /public/storage
 /public/hot
 /public/uploads
-/storage
+/storage/*.key
 .env
 Homestead.yaml
 Homestead.json
 .vagrant
 .phpunit.result.cache
+
+# Ignore everything in the storage directory except for .gitignore files
+/storage/*
+!/storage/.gitignore
+!/storage/logs/.gitignore
+!/storage/framework/.gitignore
+!/storage/framework/cache/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/views/.gitignore
+
+# Ensure directories are added but not their contents
+/storage/logs/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/cache/*
 
 # IDEs and editors
 .idea/
