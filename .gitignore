@@ -7,7 +7,7 @@
 /public/storage
 /public/hot
 /public/uploads
-/storage/*
+/storage/*.key
 .env
 Homestead.yaml
 Homestead.json

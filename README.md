@@ -64,3 +64,34 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## My Laravel App
+
+The screenshots show part of the interface
+
+### Login page
+![Login page](screenshots/screenshot1.png)
+
+### Registration
+![Registration](screenshots/screenshot2.png)
+
+### Main page
+![Main page](screenshots/screenshot3.png)
+
+### Private dialog
+![Private dialog](screenshots/screenshot4.png)
+
+### Search
+![Search](screenshots/screenshot5.png)
+
+### Group list
+![Group list](screenshots/screenshot6.png)
+
+### Group dialog
+![Group dialog](screenshots/screenshot7.png)
+
+### Editing message
+![GEditing message](screenshots/screenshot8.png)
+
+### Emoji
+![Emoji](screenshots/screenshot9.png)
