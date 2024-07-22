@@ -74,9 +74,6 @@ The screenshots show part of the interface
 ### Login page
 ![Login page](screenshots/screenshot1.png)
 
-### Registration
-![Registration](screenshots/screenshot2.png)
-
 ### Main page
 ![Main page](screenshots/screenshot3.png)
 
